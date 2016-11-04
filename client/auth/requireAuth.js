@@ -6,15 +6,15 @@ export default function BaseComponent(PassedComponent) {
     class Authenticate extends React.Component {
 
         componentWillMount() {
-            if (this.props.isAuthenticated === false) {
-                browserHistory.push('/login')
-            }
+            
+            {this.props.isAuthenticated ? null : browserHistory.push('/login') }
+
         }
 
         componentWillUpdate(nextProps) {
-            if (nextProps.isAuthenticated === false) {
-                browserHistory.push('/login')
-            }
+            
+            {nextProps.isAuthenticated ? null : browserHistory.push('/login') }
+            
         }
 
         render() {
