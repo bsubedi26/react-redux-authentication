@@ -4,13 +4,7 @@ import jwtDecode from 'jwt-decode';
 import setAuthorizationToken from '../auth/setAuthorizationToken';
 import { showMessage } from './flashMessages';
 
-export function isFetching() {
-    return {
-        type: 'LOAD_START'
-    }
-}
 export function userCreate(userData) {
-  dispatch(isFetching())
   console.log('user create action triggered');
     return (dispatch, state) => {
         // POST request for creating new user
