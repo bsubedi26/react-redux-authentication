@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
-export default class LoginPage extends React.Component {
+export default class LoginPage extends Component {
   constructor() {
     super()
     this.state = {
@@ -67,6 +67,6 @@ export default class LoginPage extends React.Component {
 };
 
 LoginPage.propTypes = {
-  login: React.PropTypes.func.isRequired,
-  removeMessages: React.PropTypes.func.isRequired
+  login: PropTypes.func.isRequired,
+  removeMessages: PropTypes.func.isRequired
 }

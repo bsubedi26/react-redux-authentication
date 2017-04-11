@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Loader from './Loader';
 
-export default class SecretAuth extends React.Component {
+export default class SecretAuth extends Component {
     render() {
         return (
             <div>

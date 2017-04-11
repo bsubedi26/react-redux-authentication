@@ -26,6 +26,9 @@ export default {
     ]
   },
   resolve: {
-    extentions: [ '', '.js' ]
+    extentions: [ '', '.js' ],
+    root: [
+      path.resolve('./client')
+    ]
   }
 }

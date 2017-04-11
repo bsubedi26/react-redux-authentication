@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 import { browserHistory } from 'react-router';
 
-export default class SignupPage extends React.Component {
+export default class SignupPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -72,5 +72,5 @@ export default class SignupPage extends React.Component {
 };
 
 SignupPage.propTypes = {
-  userCreate: React.PropTypes.func.isRequired
+  userCreate: PropTypes.func.isRequired
 }

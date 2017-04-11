@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 
-export default class NavBar extends React.Component {
+export default class NavBar extends Component {
 
   logout(e) {
     e.preventDefault();
@@ -47,6 +47,6 @@ export default class NavBar extends React.Component {
 };
 
 NavBar.propTypes = {
-  user: React.PropTypes.object.isRequired,
-  logout: React.PropTypes.func.isRequired
+  user: PropTypes.object.isRequired,
+  logout: PropTypes.func.isRequired
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import App from './components/App';
-import IndexPage from './components/IndexPage';
-import SignupPage from './containers/Signup';
-import LoginPage from './containers/Login';
-import SecretAuth from './components/SecretAuth';
+import App from 'containers/App';
+import IndexPage from 'components/IndexPage';
+import SignupPage from 'containers/signup/Signup';
+import LoginPage from 'containers/login/Login';
+import SecretAuth from 'components/SecretAuth';
 // User Authentication higher order component (pass components that require auth)
 import requireAuth from './auth/requireAuth';
 

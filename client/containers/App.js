@@ -1,7 +1,7 @@
-import React from 'react';
-import NavBar from '../containers/NavBar';
+import React, { Component } from 'react';
+import NavBar from './navbar/navbar';
 
-export default class App extends React.Component {
+export default class App extends Component {
 	render() {
 
 		return (

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 
 export default function BaseComponent(PassedComponent) {
-    class Authenticate extends React.Component {
+    class Authenticate extends Component {
 
         componentWillMount() {
             if (this.props.isAuthenticated === false) {
@@ -26,7 +26,7 @@ export default function BaseComponent(PassedComponent) {
 
 
     Authenticate.propTypes = {
-       isAuthenticated: React.PropTypes.bool.isRequired
+       isAuthenticated: PropTypes.bool.isRequired
     }
 
     function mapStateToProps(state) {

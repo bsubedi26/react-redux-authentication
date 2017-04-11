@@ -1,5 +1,6 @@
-import NavBar from '../components/NavBar.component';
-import { logout } from '../actions/usersAction';
+import NavBar from 'components/navbar/navbar.component';
+// import NavBar from '../../components/navbar/navbar.component';
+import { logout } from 'actions/usersAction';
 import { connect } from 'react-redux';
 
 function mapStateToProps(state) {
