@@ -6,20 +6,34 @@ export default function BaseComponent(PassedComponent) {
     class Authenticate extends Component {
 
         componentWillMount() {
-            if (this.props.isAuthenticated === false) {
-                browserHistory.push('/login')
-            }
+            // if (this.props.isAuthenticated === false) {
+            //     browserHistory.push('/login')
+            // }
+            this.checkAuth(this.props.isAuthenticated);
+        }
+        
+        componentWillReceiveProps (nextProps) {
+            this.checkAuth(this.props.isAuthenticated);
         }
 
         componentWillUpdate(nextProps) {
-            if (nextProps.isAuthenticated === false) {
+            this.checkAuth(this.props.isAuthenticated);
+        }
+
+        checkAuth(isAuthenticated) {
+            if (!isAuthenticated) {
                 browserHistory.push('/login')
             }
         }
 
         render() {
             return (
-                <PassedComponent {...this.props} />
+                <div>
+                    {this.props.isAuthenticated === true
+                        ? <PassedComponent {...this.props} />
+                        : null
+                    }
+                </div>
             )
         }
     }

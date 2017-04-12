@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-cart",
+  "name": "react-redux-authentication",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,8 +15,12 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.28.0",
+    "node-sass": "^4.5.2",
     "nodemon": "^1.9.2",
     "react-hot-loader": "^1.3.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"

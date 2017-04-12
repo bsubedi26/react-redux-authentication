@@ -14,7 +14,7 @@ export default class NavBar extends Component {
 
     // Navigation links if the user is logged in
     const userLinks = (
-      <ul className="right hide-on-med-and-down">
+      <ul className="right">
           <li><Link to="/"> Home </Link> </li>
           <li><Link to="/auth"> Require Auth </Link> </li>
           <li><Link to="/"> Hello, {user.user.username} </Link> </li>
@@ -24,7 +24,7 @@ export default class NavBar extends Component {
 
     // Navigation links if the user is not logged in
     const guestLinks = (
-      <ul className="right hide-on-med-and-down">
+      <ul className="right">
           <li><Link to="/"> Home </Link> </li>
           <li><Link to="/auth"> Require Auth </Link> </li>
           <li><Link to="/login"> Login </Link> </li>
